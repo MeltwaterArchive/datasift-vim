@@ -1,0 +1,890 @@
+// this is a test CSDL file
+links.url contains "obama-victory"
+bitly.country == "Mexico"
+bitly.country_code != "us"
+bitly.domain == "apple.com"
+links.meta.opengraph.email == "support@datasift.com"
+bitly.url == "example.com/frood/42.html"
+twitter.hashtags == "snow"
+demographic.sex == "Female" 
+ and interaction.content 
+ contains_any "car, cars, automobile, automobiles"
+twitter.text contains "politics" and not links.code in [400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 500, 501, 502, 503, 504, 505]
+trends.source != "twitter"
+links.meta.opengraph.non_profit substr "children"
+links.meta.opengraph.image == "www.example.com/images/lifeofpi.png"
+demographic.main_street.dressed_by contains_any "Abercrombie & Fitch, Gap, Hollister"
+AND demographic.status.work == "Students"
+links.meta.opengraph.politician == "Barack Obama"
+bitly.share.hash == "R7lbKz"
+links.meta.opengraph.school contains "St Pauls School"
+bitly.share.hash == "http://bit.ly/R7lbKz"
+links.meta.opengraph.state_province == "Colorado"
+links.meta.opengraph.street_address == "Wall Street"
+twitter.media.media_url == "https://pbs.twimg.com/media/BA1xDQiCUAA1RNn.jpg"
+twitter.place.attributes.locality substr "Oakland"
+interaction.content contains "Microsoft" and
+demographic.likes_and_interests contains "Charity"
+demographic.age_range.start >= 20
+demographic.age_range.start >= 20 AND
+demographic.age_range.end <= 39
+twitter.retweet.mention_ids in [16409683, 21447363, 31239408]
+links.meta.opengraph.food == "filet mignon"
+links.meta.opengraph.url == "http://www.imdb.com/title/tt0454876/"
+links.meta.opengraph.company == "DataSift"
+links.meta.twitter.player_height == "251"
+links.meta.opengraph.article == "Yankees"
+links.meta.twitter.player_width == "435"
+links.hops contains_any "bit.ly,bitly.com"
+links.meta.opengraph.actor contains "Will Smith"
+twitter.retweet.hashtags IN "LadyGaga, Beyonce, Shakira"
+links.meta.content_type substr "text/plain"
+links.meta.twitter.site == "@DataSift"
+links.meta.twitter.creator_id == "155505157"
+demographic.age_range.end <= 24
+links.meta.opengraph.activity contains "running"
+links.meta.keywords contains "election"
+twitter.media.display_url == "pic.twitter.com/QTSrTUjd"
+links.meta.opengraph.email in "support@datasift.com, sales@datasift.com"
+links.meta.opengraph.type == "movie"
+links.meta.twitter.creator == "@DataSift"
+demographic.main_street.shop_at contains_any "The Body Shop, Walmart"
+AND interaction.content contains "Christmas"
+demographic.location.country any "Japan, China"
+links.meta.twitter.card == "summary"
+and interaction.sample < 1
+// Restrict our filter to a 1% sample
+links.meta.twitter.image_width == "250"
+links.meta.opengraph.band contains "Beatles"
+links.meta.opengraph.musician == "Lady Gaga"
+twitter.text contains "coffee" or
+(
+    twitter.retweet.text contains "coffee" and
+    interaction.sample <= 10
+)
+links.meta.twitter.site_id == "155505157"
+links.meta.opengraph.site_name contains "IMDb"
+bitly.country_code == "de"
+twitter.retweet.mentions == "ladygaga" AND
+twitter.retweet.media.media_url == "https://pbs.twimg.com/media/A_ZmVriCAAAFzSs.jpg"
+links.meta.opengraph.sport == "football"
+links.meta.opengraph.athlete contains "Ryan Lochte"
+demographic.professions == "Teachers"
+links.meta.opengraph.hotel == "Grand Hotel"
+demographic.twitter_activity == "> 5 tweets/day"
+links.meta.opengraph.product == "iPhone7"
+links.meta.opengraph.locality == "Tristate Area"
+bitly.timezone substr "Europe"
+twitter.text contains "love" and links.normalized_url contains "http://instagram.com"
+links.meta.opengraph.drink contains "Shaken not stirred"
+links.meta.opengraph.phone_number == "555-123-4567"
+demographic.large_accounts_followed contains "Bill Gates" AND
+demographic.large_accounts_followed contains "Bill Cosby"
+demographic.location.city contains_any "New York, London"
+// Sample 3% of the Twitter firehose
+interaction.sample < 3 and
+twitter.retweeted.place.url exists
+salience.content.entities.type == "quote"
+links.meta.opengraph.movie contains "Avatar"
+links.meta.opengraph.sports_league contains "NFL"
+links.meta.opengraph.author == "Charles Dickens"
+links.meta.opengraph.website contains "DataSift"
+bitly.country_code in "fr, es, it"
+demographic.first_language != "English"
+links.meta.opengraph.fax_number == "555-123-4567"
+links.meta.charset == "UTF-8"
+twitter.place.attributes.street_address == "1600 Pennsylvania Avenue"
+// This CSDL code filters for any occurance of 1600 Pennsylvania of 
+// course, not just for the famous address in Washington DC
+bitly.cname == "es.pn"
+demographic.status.relationship == "Parents"
+and interaction.content contains_any "vacation, vacations, trip"
+and interaction.content contains_any "Italy, Italian"
+links.meta.twitter.image == "www.example.com/images/datasift.png"
+bitly.geo_region_code == "FL" and
+bitly.country_code == "US"
+twitter.place.attributes.region == "Pennsylvania"
+links.meta.opengraph.game == "monopoly"
+links.meta.description contains "election"
+salience.title.entities.type == "place" and salience.title.entities.name == "London"
+links.meta.opengraph.university contains "Oxford"
+bitly.referring_url == "example.com/MyPageOfGreatLinks"
+links.meta.opengraph.song == "Hey Jude"
+salience.title.entities.type == "place"
+links.meta.opengraph.album == "Abbey Road"
+links.meta.twitter.url substr "obama"
+bitly.url_hash == "123456"
+links.meta.opengraph.tv_show == "Dr Who"
+demographic.accounts.categories any "news, sports"
+links.meta.opengraph.cafe contains "Starbucks"
+links.meta.opengraph.government == "United Kingdom"
+links.meta.twitter.description substr "DataSift"
+bitly.geo geo_radius "51.502,-0.131:40"
+demographic.type == "Companies/org" and interaction.content contains "Ford"
+links.meta.twitter.title contains "Apple"
+demographic.location.us_state contains_any "DC, New York State"
+links.meta.twitter.player == "https://example.com/embed/a"
+links.meta.twitter.image_height == "250"
+twitter.retweet.mention_ids == 14230524
+links.meta.opengraph.sports_team contains "Yankees"
+bitly.geo_region == "Utah"
+links.meta.opengraph.title == "Life of Pi"
+demographic.services contains_any "Twitpic, iPhone"
+twitter.links url_in "www.apple.com, www.google.com, finance.yahoo.com"
+links.meta.opengraph.geo geo_radius "40.714623,-74.006605:100"
+twitter.hashtags IN "snow, work"
+links.meta.opengraph.country == "France"
+links.meta.opengraph.region == "Los Angeles"
+twitter.text contains "love" and links.code == 200
+links.meta.twitter.player_stream_content_type contains "video/mp4"
+links.meta.opengraph.blog == "blogspot"
+salience.content.entities.type == "quote" and salience.content.entities.name == "Obama"
+links.meta.standout contains "ipad" and
+links.meta.standout any "launch, launched, keynote"
+bitly.referring_domain == "example.com"
+bitly.geo_city == "San Francisco"
+bitly.geo_region_code == "U8" and
+bitly.country_code == "UK"  
+// We add this because other countries
+// have a U9 region code, and we want
+// to exclude those
+links.meta.opengraph.public_figure == "Tim Berners-Lee"
+links.meta.opengraph.bar contains "Rick's"
+// Samsple 3% of the Twitter firehose
+interaction.sample < 3 and
+twitter.retweeted.place.attributes exists
+twitter.text contains "snow" 
+AND
+twitter.media.type == "photo"
+links.meta.opengraph.restaurant == "The Restaurant at the end of the Universe"
+links.meta.opengraph.cause == "World Wildlife Fund"
+demographic.main_street.dressed_by contains_any "Zara, Forever 21, Victoria's Secret"
+AND demographic.sex == "Female"
+bitly.user.agent substr "blackberry"
+twitter.mentions == "DataSift" AND
+twitter.retweet.media.display_url == "http://pic.twitter.com/CQJ0CPqc"
+interaction.sample < 50
+and
+(
+    twitter.text contains "coffee" or
+    ( 
+        twitter.retweet.text contains "coffee" and
+        interaction.sample <= 10
+    )
+)
+links.meta.opengraph.description contains "election"
+demographic.status.work == "Students"
+and interaction.content contains_any "ipad mini, apple ipad mini"
+links.meta.twitter.player_stream == "https://example.com/raw-stream/a.mp4"
+twitter.retweet.text contains "music"
+AND
+twitter.retweet.media.type == "photo"
+links.meta.opengraph.postal_code == "94105"
+demographic.main_street.eat_and_drink_at contains_any "KFC, McDonald's, Burger King" 
+AND 
+demographic.status.work == "Retirees"
+demographic.services contains_any "Tweetdeck, Android" 
+AND interaction.content contains "Christmas"
+links.meta.newskeywords contains "google"
+links.meta.opengraph.director == "Alfred Hitchcock"
+links.meta.opengraph.book == "Hamlet"
+interaction.content contains_any "HP, H-P, Hewlett-Packard, Hewlett Packard"
+twitter.user.followers_count == 100
+twitter.user.followers_count != 0
+interaction.content cs contains "Polish"
+interaction.content near "microsoft,spreadsheet:5"
+interaction.content contains_near "deere,tractor:50"
+interaction.content contains_near "giraffe,antelope,gorilla,elephant:40"
+interaction.content contains_near "rangers,giants:30"
+interaction.content substr "gator"
+twitter.user.name in "Bill Gates, Larry Ellison, Linus Torvalds"
+twitter.user.follower_ratio == 9.9
+twitter.text contains "Olympics"
+AND
+twitter.text contains "2012"
+twitter.source != "web"
+twitter.source substr "Blackberry"
+twitter.in_reply_to_screen_name exists
+and interaction.sample < 5
+twitter.in_reply_to_screen_name == "datasift"
+twitter.geo geo_radius "51.4553,-0.9689:50"
+twitter.geo geo_polygon "51.4615,-0.9864:51.4586,-0.9472:51.4466,-0.9412:51.4443,-0.9651:51.4445,-0.9831"
+twitter.geo geo_box "51.4911,-1.0617:51.4194,-0.8921"
+twitter.user.description contains "marketing"
+ AND twitter.user.description contains "consumer packaged goods"
+twitter.user.location contains "Japan"
+twitter.user.statuses_count > 500000
+twitter.user.followers_count > 500000
+twitter.user.follower_ratio >= 10
+twitter.user.statuses_count > 10000
+AND twitter.user.follower_ratio >= 50
+twitter.user.friends_count > 100000
+twitter.user.screen_name substr "marketing"
+twitter.user.lang == "fr"
+twitter.user.lang == "fr"
+ and language.tag == "en"
+twitter.user.time_zone == "Tokyo"
+twitter.user.time_zone != "London"
+twitter.user.id == 155505157
+twitter.place.place_type == "poi"
+twitter.place.country == "Canada"
+twitter.place.country_code == "CA"
+twitter.retweet.text contains "Apple"
+twitter.retweet.elapsed <= 15
+twitter.retweet.source != "web"
+twitter.retweet.source substr "Blackberry"
+twitter.retweet.user.location contains "Japan"
+twitter.retweet.user.description contains "marketing"
+AND twitter.retweet.user.description contains "consumer packaged goods"
+twitter.retweet.user.statuses_count > 100000
+twitter.retweet.user.followers_count > 500000
+twitter.retweet.user.follower_ratio >= 10
+twitter.retweet.user.statuses_count > 10000
+AND twitter.retweet.user.follower_ratio >= 50
+twitter.retweet.user.profile_age > 1095
+twitter.retweet.user.friends_count > 100000
+twitter.retweet.user.screen_name substr "marketing"
+twitter.retweet.user.lang == "fr"
+twitter.retweet.user.lang == "fr"
+and language.tag == "en"
+twitter.retweet.user.time_zone == "Tokyo"
+twitter.retweet.user.time_zone != "London"
+twitter.user.name substr "doctor"
+twitter.retweet.user.name substr "doctor"
+twitter.retweet.user.id == 155505157
+twitter.retweeted.id == "104542653177270272"
+twitter.retweeted.source != "web"
+twitter.retweeted.source substr "Blackberry"
+twitter.retweeted.user.description contains "marketing"
+twitter.retweeted.user.location contains "Japan"
+twitter.retweet.user.statuses_count > 500000
+twitter.retweeted.user.follower_ratio >= 10
+twitter.retweeted.user.profile_age > 1095
+twitter.retweeted.user.lang == "fr"
+twitter.retweet.user.lang == "fr"
+and language.tag == "en"
+twitter.retweeted.user.time_zone == "Tokyo"
+twitter.retweeted.user.time_zone != "London"
+twitter.retweeted.user.name substr "doctor"
+twitter.retweeted.place.place_type == "poi"
+twitter.retweeted.place.country == "Canada"
+tag "Mac" { interaction.content contains "Mac" 
+OR interaction.content contains "Macintosh" }
+tag "iPod" { interaction.content contains "iPod" }
+tag "iPad" { interaction.content contains "iPad" }
+tag "iTunes" { interaction.content contains "iTunes" }
+tag "Safari" { interaction.content contains "Safari" }
+tag "Steve Jobs" { interaction.content contains "Steve Jobs" }
+tag "Steve Wozniak" { interaction.content contains "Steve Wozniak" }
+
+return {
+      interaction.content contains "apple"
+}
+twitter.text contains "Starbucks"
+twitter.text contains "Starbucks"
+  OR
+facebook.message contains "Starbucks"
+  OR
+digg.item.description contains "Starbucks"
+(
+interaction.type == "twitter" 
+OR interaction.type == "facebook"
+OR interaction.type == "digg"
+)
+    AND
+interaction.content contains "Starbucks"
+(
+  interaction.type != "twitter"
+  AND interaction.type != "myspace"
+)
+AND interaction.content contains "Starbucks"
+twitter.text contains "apple"
+AND twitter.user.description contains "evangelist"
+twitter.text contains "marketing"
+OR twitter.retweeted.text contains "marketing"
+twitter.text contains "Packard"
+AND NOT twitter.text contains "Hewlett"
+facebook.author.name substr "apple"
+facebook.author.name == "Linus Torvalds"
+facebook.author.link == "http://www.facebook.com/profile.php?id=12345"
+language.tag == "en"
+language.tag in "en, fr"
+klout.score >= 40
+klout.network >= 30
+klout.amplification > 80
+klout.true_reach >= 1000
+twitter.text contains "read this"
+AND links.title contains "Google"
+links.url substr "dog-ate-my-homework.html"
+links.domain == "ebay.com"
+links.retweet_count > 10000
+twitter.text contains "google"
+and interaction.sample < 5.25
+facebook.author.id exists
+and interaction.sample < 5
+facebook.message contains "apple"
+facebook.message contains "apple"
+ and not facebook.message contains "microsoft"
+interaction.type == "facebook"
+and facebook.type != "photo"
+and facebook.type != "video"
+facebook.description contains "apple"
+and facebook.type == "photo"
+facebook.caption contains "nascar"
+and facebook.type == "video"
+facebook.type == "video"
+facebook.application substr "phone"
+facebook.source substr "phone"
+facebook.link substr "flickr"
+facebook.og.title exists
+and interaction.sample < 5
+facebook.og.location exists
+and interaction.sample < 5
+facebook.og.photos exists
+and interaction.sample < 5
+facebook.og.by exists
+ and interaction.sample < 5
+facebook.og.description exists
+ and interaction.sample < 5
+facebook.og.type exists
+and interaction.sample < 5
+facebook.og.length exists
+and interaction.sample < 5
+interaction.title contains "ipad"
+interaction.content contains "ipad"
+interaction.geo exists
+and interaction.sample < 10
+interaction.author.username substr "microsoft"
+interaction.author.name substr "Linus"
+interaction.author.id exists
+ and interaction.sample < 5
+interaction.author.avatar exists
+and interaction.sample < 5
+interaction.author.link exists
+and interaction.sample < 5
+interaction.link exists
+and interaction.sample < 5
+twitter.retweeted.user.listed_count > 10000
+twitter.retweeted.place.country_code == "CA"
+twitter.retweeted.place.full_name == "London, England"
+twitter.retweeted.place.name == "London"
+tag "APPLE" {stream "f0596f03644177b8bf5b59708a08bfe8"}
+tag "Snow"{stream "6740288c3c3d02984d1dc624d77e198f"}
+tag "Date" {stream "922aad7bec1836c83ede051b153d3d09"}
+return {
+    stream "f0596f03644177b8bf5b59708a08bfe8" or
+    stream "6740288c3c3d02984d1dc624d77e198f" or
+    stream "922aad7bec1836c83ede051b153d3d09"
+}
+tag "Steve Jobs" { interaction.content contains "Steve Jobs" }
+return {
+    interaction.content contains_any "Apple, Mac, iPad, Steve Jobs"
+}
+tag "test" { stream "f2625cb00dcbbe4121b654d9d3e1f3aa"}
+return {
+    stream "f2625cb00dcbbe4121b654d9d3e1f3aa"
+}
+twitter.text contains "Cincinnati Reds"
+links.title contains "something"
+links.domain in "yahoo.com, nytimes.com"
+links.retweet_count > 1000
+links.title contains "Cincinnati Bengals"
+trends.type == "daily"
+trends.type == "London"
+interaction.content contains "Buckingham Palace"
+or trends.type == "London"
+twitter.text contains "election"
+AND language.tag == "en"
+AND stream "670c493f73a29a280162aa2b688fa956"
+not twitter.geo exists
+and interaction.sample < 5
+twitter.user.id in [111111111,111111112,111111113]
+twitter.place.url exists
+and interaction.sample < 2
+twitter.retweet.mentions in "rihanna, ladygaga"
+twitter.user.screen_name in "name1, name2, name3"
+twitter.place.name == "London"
+twitter.retweeted.user.follower_ratio > 50
+and twitter.user.statuses_count > 10000
+twitter.retweeted.user.friends_count > 1000
+twitter.retweeted.user.id == 155505157
+demographic.gender contains_any "male, mostly_male"
+and interaction.sample < 5
+demographic.gender == "female" and
+interaction.sample < 5
+links.age < 100
+and interaction.sample < 5
+twitter.retweet.count > 50
+twitter.retweet.domains == "apple.com"
+twitter.user.url exists and
+interaction.sample < 7
+twitter.retweet.user.url exists and
+interaction.sample < 5
+twitter.retweeted.user.url exists and
+interaction.sample < 5
+interaction.geo geo_radius "51.4553,-0.9689:50"
+twitter.mentions == "DataSift"
+twitter.domains == "apple.com"
+tag "New York City" {interaction.geo geo_radius "40.73141253955102,-73.9975634765625:50"}
+tag "Los Angeles"   {interaction.geo geo_radius "34.04557362447603,-118.25323974609375:50"}
+tag "Chicago"       {interaction.geo geo_radius "41.87137359046374,-87.670048828125:50"}
+tag "Houston"       {interaction.geo geo_radius "29.749799863884224,-95.36322509765625:50"}
+tag "Philadelphia"  {interaction.geo geo_radius "39.95583044348851,-75.145634765625:50"}
+tag "Phoenix"       {interaction.geo geo_radius "33.475866285896466,-112.07755004882813:50"}
+tag "San Antonio"   {interaction.geo geo_radius "29.472807218822343,-98.49982177734375:50"}
+tag "San Diego"     {interaction.geo geo_radius "32.75467986374471,-117.1848193359375:50"}
+tag "Dallas"        {interaction.geo geo_radius "32.8285647393374,-96.7996875:50"}
+tag "San Jose"      {interaction.geo geo_radius "37.32187207146947,-121.88971435546875:50"}
+
+return {
+  // New York
+  interaction.geo geo_radius "40.73141253955102,-73.9975634765625:50"
+  // Los Angeles
+  or interaction.geo geo_radius "34.04557362447603,-118.25323974609375:50"
+  // Chicago
+  or interaction.geo geo_radius "41.87137359046374,-87.670048828125:50"
+  // Houston
+  or interaction.geo geo_radius "29.749799863884224,-95.36322509765625:50"
+  // Philadelphia
+  or interaction.geo geo_radius "39.95583044348851,-75.145634765625:50"
+  // Phoenix
+  or interaction.geo geo_radius "33.475866285896466,-112.07755004882813:50"
+  // San Antonio
+  or interaction.geo geo_radius "29.472807218822343,-98.49982177734375:50"
+  // San Diego
+  or interaction.geo geo_radius "32.75467986374471,-117.1848193359375:50"
+  // Dallas
+  or interaction.geo geo_radius "32.8285647393374,-96.7996875:50"
+  // San Jose
+  or interaction.geo geo_radius "37.32187207146947,-121.88971435546875:50"
+}
+twitter.place.country_code == "us"
+// New York
+and not interaction.geo geo_radius "40.73141253955102,-73.9975634765625:50"
+// Los Angeles
+and not interaction.geo geo_radius "34.04557362447603,-118.25323974609375:50"
+// Chicago 
+and not interaction.geo geo_radius "41.87137359046374,-87.670048828125:50"
+// Houston 
+and not interaction.geo geo_radius "29.749799863884224,-95.36322509765625:50"
+// Philadelphia
+and not interaction.geo geo_radius "39.95583044348851,-75.145634765625:50"
+// Phoenix
+and not interaction.geo geo_radius "33.475866285896466,-112.07755004882813:50"
+// San Antonio
+and not interaction.geo geo_radius "29.472807218822343,-98.49982177734375:50"
+// San Diego
+and not interaction.geo geo_radius "32.75467986374471,-117.1848193359375:50"
+// Dallas
+and not interaction.geo geo_radius "32.8285647393374,-96.7996875:50"
+// San Jose
+and not interaction.geo geo_radius "37.32187207146947,-121.88971435546875:50"
+twitter.geo geo_radius "51.4553,-0.9689:50"
+twitter.geo geo_radius "40.78, -73.97:250"
+twitter.retweeted.user.screen_name == "Ladygaga"
+twitter.retweeted.user.screen_name in "DataSift, DataSiftDev,
+                                       DataSiftNews, Nik,
+                                       RMB, StewartTownsend"
+facebook.author.avatar exists
+and interaction.sample < 5
+facebook.name substr "music"
+facebook.name cs == "Lady Gaga video"
+facebook.author.id == "1609497845"
+facebook.author.link == "http://www.facebook.com/twitter"
+facebook.likes.count > 5
+facebook.likes.names == "billgates"
+facebook.likes.ids == "1234567890"
+twitter.mentions in "LadyGaga, Beyonce"
+facebook.likes.names in "LadyGaga, Beyonce"
+facebook.likes.ids in "1234567890, 9876543210"
+facebook.to.ids == "1234567890"
+facebook.to.ids in "1111111111, 2222222222, 3333333333"
+facebook.to.names in "Huey, Dewey, Louie"
+facebook.to.names == "qwerty"
+interaction.content contains "Apple"
+and trends.type in "daily, weekly, current"
+twitter.domains in "google.com, microsoft.com"
+twitter.retweet.domains in "google.com, microsoft.com"
+twitter.retweet.mentions == "rihanna"
+twitter.retweet.links == "www.yahoo.com/dog-ate-my-homework.htm"
+twitter.retweet.links in "www.yahoo.com/news.htm, www.yahoo.com/sport.htm"
+twitter.links == "www.yahoo.com/dog-ate-my-homework.htm"
+twitter.links in "www.yahoo.com/news.htm, www.yahoo.com/sport.htm"
+salience.content.topics contains_any "Health, Biotechnology"
+or 
+salience.title.topics   contains_any "Health, Biotechnology"
+blog.domain == "datasift.com"
+interaction.geo exists
+and interaction.sample < 5
+twitter.user.screen_name exists
+and interaction.sample < 5
+interaction.content contains "web 2.0"
+twitter.user.description contains "social media expert"
+interaction.content cs contains "LOUD"
+interaction.content cs contains "quiet"
+twitter.user.screen_name regex_exact "chris_?alex(ander)?"
+interaction.content regex_exact "I love (Twitter|Tweeting|Facebook|Social)!?"
+interaction.content regex_partial "authori(z|s)ed"
+twitter.user.description regex_partial "market(er|ing| research)"
+twitter.user.screen_name == "chris_alexander"
+interaction.content cs == "TEST"
+twitter.user.friends_count > 100
+twitter.user.followers_count < 1500
+twitter.retweet_count >= 100
+language.tag in "en,de,es"
+and interaction.sample < 1
+blog.author.avatar exists
+and interaction.sample < 5
+blog.author.link == "http://www.datasift.com/blog/profile.php?id=12345"
+blog.author.name contains "apple"
+blog.content contains "iPad"
+blog.type == "comment" and 
+blog.content contains "iPod"
+blog.title cs contains "PHP" and
+blog.title any "5.3, 5.4" and
+blog.type == "post"
+blog.title contains "iPad" and
+blog.type == "comment"
+blog.title contains "Switzerland"
+(blog.type == "post" and blog.title cs any "Republican, GOP")
+   or
+(blog.type == "comment" and blog.title any "Mitt Romney, Rick Santorum")
+blog.type == "post"
+and interaction.sample < 1
+blog.type == "comment"
+and interaction.sample < 1
+blog.contenttype != "HTML"
+blog.link exists
+and blog.type == "post"
+and interaction.sample < 1
+blog.link exists
+and blog.type == "comment"
+and interaction.sample < 1
+blog.post.link exists
+and interaction.sample < 1
+blog.post.title contains "iPad"
+board.author.age > 39 and board.author.age < 50
+board.author.avatar exists
+and interaction.sample < 5
+board.author.gender == "F"
+board.author.link exists
+and interaction.sample < 1
+
+// We're using interaction.sample to limit our stream to a 1% sample
+// When a stream might produce a large amount of data, this is important
+// And.. it reduces costs!
+board.author.location contains "Texas"
+board.author.name == "Linus Torvalds"
+board.author.username substr "jedi"
+board.title contains "iPad"
+board.type == "thread"
+and board.content contains "baseball"
+board.type == "post"
+and board.content contains "Apple"
+board.domain in "www.xyz.com, xyz.com"
+
+/* We include two filtering strings when we are unsure whether whether
+   the sending site identifies itself as xyz.com or www.xyz.com */
+board.contenttype != "HTML"
+board.author.registered == 1
+and board.content contains "iPad"
+board.author.registered == 0
+and board.content contains "iPad"
+board.author.signature contains "data"
+board.author.name contains "Smith"
+board.content contains "iPad"
+interaction.content contains "iPad"
+board.link exists
+and interaction.sample < 5
+board.link == "www.xyz.com/msgs/a/123456"
+board.thread exists
+and interaction.sample < 9
+video.author.avatar exists
+and interaction.sample < 5
+video.author.link exists
+and interaction.sample < 1
+
+// We're using interaction.sample to limit our stream to a 1% sample
+// When a stream might produce a large amount of data, this is important
+// And.. it reduces costs!
+video.author.name == "Linus Torvalds"
+video.author.name contains "Smith"
+video.author.username substr "jedi"
+video.category substr "news"
+video.commentslink exists
+video.content contains "iPad"
+video.contenttype != "HTML"
+video.duration < 20
+video.type == "video"
+video.type == "comment"
+video.domain in "www.xyz.com, xyz.com"
+
+/* We include two filtering strings when we are unsure whether whether
+   the sending site identifies itself as xyz.com or www.xyz.com */
+video.thumbnail exists
+video.title contains "Lady Gaga"
+video.tags contains_any "Lady Gaga, ladygaga"
+video.tags contains "iPad"
+or video.category contains "mobile"
+video.videolink exists
+and interaction.sample < 5
+youtube.author.link exists
+and interaction.sample < 5
+youtube.author.name exists
+and interaction.sample < 5
+blog.author.username exists
+and interaction.sample < 5
+youtube.category == "Film & Animation"
+youtube.contenttype != "HTML"
+youtube.duration <= 10
+youtube.duration >= 55 and
+youtube.duration <= 65
+youtube.type == "comment"
+youtube.tags contains_any "Lady Gaga, ladygaga"
+youtube.tags contains "iPad"
+or youtube.category contains "mobile"
+youtube.title contains "Lady Gaga"
+youtube.content contains "iPad"
+interaction.content contains "iPad"
+youtube.commentslink exists
+and interaction.sample < 5
+amazon.author.link exists
+and interaction.sample < 10
+amazon.contenttype != "HTML"
+amazon.type == "thread"
+and board.content contains "comedy"
+amazon.type == "post"
+and board.content contains "Apple"
+amazon.title contains "iPad"
+amazon.link exists
+and interaction.sample < 5
+amazon.link == "www.xyz.com/msgs/a/123456"
+amazon.thread exists
+and interaction.sample < 10
+amazon.content contains "Google"
+amazon.author.name == "Linus Torvalds"
+amazon.author.name contains "Smith"
+dailymotion.author.link exists
+and interaction.sample < 5
+dailymotion.author.username substr "jedi"
+dailymotion.category substr "news"
+dailymotion.contenttype != "HTML"
+dailymotion.duration < 20
+dailymotion.tags contains_any "Lady Gaga, ladygaga"
+dailymotion.title contains "Lady Gaga"
+dailymotion.videolink exists
+and interaction.sample < 5
+flickr.author.link exists
+and interaction.sample < 1
+
+// We're using interaction.sample to limit our stream to a 1% sample
+// When a stream might produce a large amount of data, this is important
+// And.. it reduces costs!
+flickr.author.name == "Linus Torvalds"
+flickr.author.name contains "Smith"
+flickr.content contains_any "dog, dogs"
+flickr.contenttype != "HTML"
+flickr.link exists
+and interaction.sample < 10
+flickr.link == "www.xyz.com/msgs/a/123456"
+2ch.contenttype != "HTML"
+2ch.author.name == "Linus Torvalds"
+2ch.author.name contains "xyz"
+2ch.content contains "iPad"
+2ch.title contains "iPad"
+2ch.type == "thread" and 2ch.content contains "Toyota"
+2ch.type == "post"
+and 2ch.content contains "Honda"
+2ch.thread exists
+and interaction.sample < 5
+2ch.link exists
+and interaction.sample < 5
+2ch.link == "www.xyz.com/msgs/a/123456"
+imdb.contenttype != "HTML"
+imdb.thread exists
+and interaction.sample < 10
+imdb.author.name == "John Doe"
+imdb.author.name == "Smith"
+imdb.author.link exists
+and interaction.sample < 10
+imdb.content contains "Star Wars"
+imdb.link exists
+and interaction.sample < 5
+imdb.link == "www.imdb.com/example/a/123456"
+imdb.title contains "Star Wars"
+imdb.type == "thread" and imdb.content contains "Ocean's Eleven"
+imdb.type == "post" and imdb.content contains "Ocena's Twelve"
+topix.contenttype != "HTML"
+reddit.contenttype != "HTML"
+topix.title contains "iPad"
+reddit.title contains "iPad"
+reddit.link exists and interaction.sample < 5
+topix.link exists and interaction.sample < 5
+reddit.content contains "iPad"
+topix.content contains "iPad"
+reddit.author.name == "Linus Torvalds"
+topix.author.name == "Linus Torvalds"
+reddit.author.link exists and interaction.sample < 10
+klout.topics contains "Google"
+interaction.content contains "kakapo" and
+klout.topics contains "conservation"
+newscred.article.authors == "John Doe"
+newscred.article.authors in "John Doe, Jane Doe"
+newscred.article.authors == "John Doe"
+and newscred.article.authors == "Jane Doe"
+and newscred.article.authors == "Johann Sebastian Doe"
+newscred.article.category == "Business"
+newscred.article.category == "Regional"
+and newscred.article.content contains "education"
+newscred.article.content contains_any "Disneyland, Disney World, Tokyo Disney,
+                      Disneyland Paris, Hong Kong Disneyland, Shanghai Disney"
+newscred.article.domain == "bbc.co.uk"
+newscred.article.title contains "election"
+newscred.article.topics contains "weather" and
+newscred.article.topics contains "disaster"
+newscred.image.attribution.text == "The Associated Press"
+newscred.image.caption contains "election"
+newscred.source.domain == "Bloomberg.com"
+newscred.type == "video"
+newscred.type in "article, image"
+newscred.video.caption contains "election"
+newscred.video.topics contains "politics" and 
+newscred.video.topics contains "education"
+newscred.video.title contains "president"
+newscred.article.domain == "guardian.co.uk"
+newscred.video.category == "Business"
+newscred.video.category == "Regional"
+and newscred.video.title contains "education"
+newscred.image.attribution.link substr "xyz.com"
+newscred.article.content contains_near "vacation, cancun:200"
+newscred.article.content contains_near "Yahoo, Microsoft:400" and
+newscred.article.content contains_near "staff, redundancies:200" and
+newscred.article.content contains_near "email, advertising:200"
+topix.author.location cs contains "TX"
+topix.type == "thread"
+and topix.content contains "baseball"
+topix.type == "post" 
+and topix.content contains "Apple"
+topix.thread exists
+and interaction.sample < 10
+reddit.type == "thread"
+and reddit.content contains "baseball"
+reddit.type == "post"
+and reddit.content contains "Apple"
+reddit.thread exists
+and interaction.sample < 10
+wikipedia.author.contributions contains "Datasift"
+wikipedia.author.talk == "User_talk:JohnDoe"
+wikipedia.author.username == "BillGates"
+wikipedia.body contains_any "big, small, fast, slow"
+wikipedia.body contains "online" and
+wikipedia.body contains "marketing"
+wikipedia.categories contains "beverage"
+wikipedia.categories == "People_from_London"
+wikipedia.changetype == "new_page" and
+wikipedia.body contains "analysis"
+wikipedia.changetype == "minor_edit" and
+wikipedia.body contains "PHP"
+wikipedia.diff.changes.added contains "Microsoft"
+wikipedia.diff.changes.removed contains "Microsoft" and
+wikipedia.diff.changes.added contains "Apple"
+wikipedia.diff.changes.removed contains "Microsoft"
+wikipedia.diff.changes.removed contains "Microsoft" and
+wikipedia.diff.changes.added contains "Apple"
+wikipedia.diff.from == 486625803
+wikipedia.diff.to == 486625803
+wikipedia.externallinks contains "datasift.com"
+wikipedia.images substr "typewriter"
+wikipedia.namespace == "Template"
+wikipedia.newlen < 1000
+wikipedia.ns == 10
+wikipedia.title contains "iPad"
+wikipedia.oldlen < 1000 and
+wikipedia.newlen > 1500
+wikipedia.pageid exists and
+interaction.sample < 5
+wikipedia.parentid exists and
+interaction.sample < 5
+flickr.type == "thread"
+and flickr.content contains "baseball"
+flickr.thread exists
+and interaction.sample < 9
+flickr.author.username substr "ninja"
+twitter.user.verified exists and
+twitter.user.followers_count > 100000
+not twitter.user.verified exists and
+twitter.user.screen_name substr "official"
+tag "red"   {stream "f0596f03644177b8bf5b59708a08bfe8"}
+tag "white" {stream "6740288c3c3d02984d1dc624d77e198f"}
+tag "blue"  {stream "922aad7bec1836c83ede051b153d3d09"}
+return {
+    stream "f0596f03644177b8bf5b59708a08bfe8" or
+    stream "6740288c3c3d02984d1dc624d77e198f" or
+    stream "922aad7bec1836c83ede051b153d3d09"
+}
+twitter.text contains_any "happy birthday, birthday, bday, b'day"
+twitter.place.name == "England" and
+twitter.place.place_type in "city, country"
+twitter.status == "user_unprotect"
+twitter.retweet.user.verified exists and
+twitter.retweeted.user.verified exists
+not twitter.retweet.user.verified exists and
+twitter.user.verified exists
+twitter.retweet.user.verified exists and
+not twitter.user.verified exists
+twitter.retweeted.user.verified exists and
+twitter.user.followers_count > 100000
+twitter.retweeted.user.verified exists and
+twitter.user.screen_name substr "official"
+interaction.type == "Twitter" and
+language.confidence >= 90
+language.confidence >= 75 and
+language.tag == "ar"
+interaction.content == "twitter" and
+interaction.sample < 2
+twitter.place.full_name contains "London"
+twitter.place.full_name == "London, England"
+twitter.place.name == "London"
+and twitter.place.country_code != "GB"
+interaction.geo geo_box "51.5013,-1.0997:51.4193,-0.8669"
+interaction.geo geo_polygon "51.5002, -1.0815:51.4827,
+                             -1.0107:51.4857, -0.9737:51.5079,
+                             -0.9647:51.4925, -0.8693:51.4210,
+                             -0.8954:51.4296, -1.0567"
+twitter.user.listed_count > 100
+twitter.user.profile_age > 30 and
+twitter.user.profile_age < 62 and
+interaction.sample < 5   // limit our stream to a 5% sample of the firehose
+twitter.user.profile_age > 1095 and
+interaction.sample < 5   // limit our stream to a 5% sample of the firehose
+twitter.retweet.user.listed_count > 300
+twitter.retweeted.user.url substr "apple.com"
+interaction.sample <= 1 and
+interaction.type == "twitter"
+interaction.source contains "tweetdeck"
+interaction.type contains_any "Twitter, YouTube"
+and interaction.content contains "apple"
+flickr.title contains "McDonald's"
+salience.content.sentiment >= 5
+salience.content.sentiment < -2
+salience.title.sentiment >= 5
+salience.title.sentiment < -2
+twitter.mention_ids == 155505157
+trends.content == "football"
+newscred.source.circulation exists
+newscred.source.company_type == "private"
+newscred.source.country == "France"
+newscred.source.founded == "1980"
+newscred.source.link exists
+twitter.mention_ids in [155505157, 155505158, 155505159]
+newscred.source.media_type == "mainstream" and
+newscred.type == "article"
+newscred.source.name == "Reuters"
+newscred.source.link == "example.com"
+interaction.content cs any "Apple,Google,Microsoft"
+interaction.content substr "news"
+interaction.content cs substr "News"
+twitter.user.screen_name == "dtsn" OR twitter.user.screen_name == "nickhalstead" OR twitter.user.screen_name == "chris_alexander"
+twitter.user.screen_name IN "dtsn,nickhalstead,chris_alexander"
+interaction.content contains "google" or interaction.content contains "microsoft" or interaction.content contains "apple"
+interaction.content any "apple,microsoft,google"
