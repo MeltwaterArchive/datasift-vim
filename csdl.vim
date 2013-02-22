@@ -68,15 +68,12 @@ syn match csdlTarget 'interaction\.sample'
 syn match csdlTarget 'links\.title'
 syn match csdlTarget 'links\.url'
 syn keyword csdlTarget links.normalized_url
-
 syn match csdlTarget 'links\.hops'
 syn match csdlTarget 'links\.code'
 syn match csdlTarget 'links\.domain'
 syn keyword csdlTarget links.retweet_count
-
 syn match csdlTarget 'links\.age'
 syn keyword csdlTarget links.meta.content_type
-
 syn match csdlTarget 'links\.meta\.charset'
 syn match csdlTarget 'links\.meta\.lang'
 syn match csdlTarget 'links\.meta\.keywords'
@@ -89,19 +86,14 @@ syn match csdlTarget 'links\.meta\.opengraph\.image'
 syn match csdlTarget 'links\.meta\.opengraph\.url'
 syn match csdlTarget 'links\.meta\.opengraph\.description'
 syn keyword csdlTarget links.meta.opengraph.site_name
-
 syn match csdlTarget 'links\.meta\.opengraph\.email'
 syn keyword csdlTarget links.meta.opengraph.phone_number
-
 syn keyword csdlTarget links.meta.opengraph.fax_number
-
 syn match csdlTarget 'links\.meta\.opengraph\.geo'
 syn keyword csdlTarget links.meta.opengraph.street_address
-
 syn match csdlTarget 'links\.meta\.opengraph\.locality'
 syn match csdlTarget 'links\.meta\.opengraph\.region'
 syn keyword csdlTarget links.meta.opengraph.postal_code
-
 syn match csdlTarget 'links\.meta\.opengraph\.activity'
 syn match csdlTarget 'links\.meta\.opengraph\.sport'
 syn match csdlTarget 'links\.meta\.opengraph\.bar'
@@ -111,13 +103,10 @@ syn match csdlTarget 'links\.meta\.opengraph\.hotel'
 syn match csdlTarget 'links\.meta\.opengraph\.restaurant'
 syn match csdlTarget 'links\.meta\.opengraph\.cause'
 syn keyword csdlTarget links.meta.opengraph.sports_league
-
 syn keyword csdlTarget links.meta.opengraph.sports_team
-
 syn match csdlTarget 'links\.meta\.opengraph\.band'
 syn match csdlTarget 'links\.meta\.opengraph\.government'
 syn keyword csdlTarget links.meta.opengraph.non_profit
-
 syn match csdlTarget 'links\.meta\.opengraph\.school'
 syn match csdlTarget 'links\.meta\.opengraph\.university'
 syn match csdlTarget 'links\.meta\.opengraph\.actor'
@@ -127,12 +116,10 @@ syn match csdlTarget 'links\.meta\.opengraph\.director'
 syn match csdlTarget 'links\.meta\.opengraph\.musician'
 syn match csdlTarget 'links\.meta\.opengraph\.politician'
 syn keyword csdlTarget links.meta.opengraph.public_figure
-
 syn match csdlTarget 'links\.meta\.opengraph\.city'
 syn match csdlTarget 'links\.meta\.opengraph\.country'
 syn match csdlTarget 'links\.meta\.opengraph\.landmark'
 syn keyword csdlTarget links.meta.opengraph.state_province
-
 syn match csdlTarget 'links\.meta\.opengraph\.album'
 syn match csdlTarget 'links\.meta\.opengraph\.book'
 syn match csdlTarget 'links\.meta\.opengraph\.drink'
@@ -142,34 +129,25 @@ syn match csdlTarget 'links\.meta\.opengraph\.movie'
 syn match csdlTarget 'links\.meta\.opengraph\.product'
 syn match csdlTarget 'links\.meta\.opengraph\.song'
 syn keyword csdlTarget links.meta.opengraph.tv_show
-
 syn match csdlTarget 'links\.meta\.opengraph\.blog'
 syn match csdlTarget 'links\.meta\.opengraph\.website'
 syn match csdlTarget 'links\.meta\.opengraph\.article'
 syn match csdlTarget 'links\.meta\.twitter\.card'
 syn match csdlTarget 'links\.meta\.twitter\.site'
 syn keyword csdlTarget links.meta.twitter.site_id
-
 syn match csdlTarget 'links\.meta\.twitter\.creator'
 syn keyword csdlTarget links.meta.twitter.creator_id
-
 syn match csdlTarget 'links\.meta\.twitter\.url'
 syn match csdlTarget 'links\.meta\.twitter\.description'
 syn match csdlTarget 'links\.meta\.twitter\.title'
 syn match csdlTarget 'links\.meta\.twitter\.image'
 syn keyword csdlTarget links.meta.twitter.image_width
-
 syn keyword csdlTarget links.meta.twitter.image_height
-
 syn match csdlTarget 'links\.meta\.twitter\.player'
 syn keyword csdlTarget links.meta.twitter.player_width
-
 syn keyword csdlTarget links.meta.twitter.player_height
-
 syn keyword csdlTarget links.meta.twitter.player_stream
-
 syn keyword csdlTarget links.meta.twitter.player_stream_content_type
-
 syn match csdlTarget 'myspace\.link'
 syn match csdlTarget 'myspace\.content'
 syn match csdlTarget 'myspace\.contenttype'
@@ -201,9 +179,7 @@ syn match csdlTarget 'newscred\.source\.name'
 syn match csdlTarget 'newscred\.source\.link'
 syn match csdlTarget 'newscred\.source\.domain'
 syn keyword csdlTarget newscred.source.media_type
-
 syn keyword csdlTarget newscred.source.company_type
-
 syn match csdlTarget 'newscred\.source\.country'
 syn match csdlTarget 'newscred\.source\.circulation'
 syn match csdlTarget 'newscred\.source\.founded'
@@ -235,7 +211,6 @@ syn match csdlTarget 'klout\.score'
 syn match csdlTarget 'klout\.network'
 syn match csdlTarget 'klout\.amplification'
 syn keyword csdlTarget klout.true_reach
-
 syn match csdlTarget 'klout\.topics'
 syn match csdlTarget 'wikipedia\.author\.talk'
 syn match csdlTarget 'wikipedia\.author\.contributions'
@@ -257,33 +232,23 @@ syn match csdlTarget 'wikipedia\.diff\.to'
 syn match csdlTarget 'wikipedia\.diff\.changes\.added'
 syn match csdlTarget 'wikipedia\.diff\.changes\.removed'
 syn keyword csdlTarget demographic.twitter_activity
-
 syn match csdlTarget 'demographic\.location\.country'
 syn keyword csdlTarget demographic.location.us_state
-
 syn match csdlTarget 'demographic\.location\.city'
 syn match csdlTarget 'demographic\.type'
 syn match csdlTarget 'demographic\.sex'
 syn match csdlTarget 'demographic\.status\.relationship'
 syn match csdlTarget 'demographic\.status\.work'
 syn keyword csdlTarget demographic.likes_and_interests
-
 syn keyword csdlTarget demographic.first_language
-
 syn match csdlTarget 'demographic\.professions'
 syn match csdlTarget 'demographic\.services'
 syn keyword csdlTarget demographic.large_accounts_followed
-
 syn keyword csdlTarget demographic.age_range.start
-
 syn keyword csdlTarget demographic.age_range.end
-
 syn keyword csdlTarget demographic.main_street.dressed_by
-
 syn keyword csdlTarget demographic.main_street.shop_at
-
 syn keyword csdlTarget demographic.main_street.eat_and_drink_at
-
 syn match csdlTarget 'demographic\.accounts\.categories'
 syn match csdlTarget 'demographic\.gender'
 syn match csdlTarget 'flickr\.title'
@@ -299,48 +264,34 @@ syn match csdlTarget 'twitter\.text'
 syn match csdlTarget 'twitter\.source'
 syn match csdlTarget 'twitter\.mentions'
 syn keyword csdlTarget twitter.mention_ids
-
 syn match csdlTarget 'twitter\.links'
 syn match csdlTarget 'twitter\.domains'
 syn keyword csdlTarget twitter.in_reply_to_screen_name
-
 syn match csdlTarget 'twitter\.geo'
 syn match csdlTarget 'twitter\.user\.description'
 syn match csdlTarget 'twitter\.user\.location'
 syn keyword csdlTarget twitter.user.statuses_count
-
 syn keyword csdlTarget twitter.user.followers_count
-
 syn keyword csdlTarget twitter.user.follower_ratio
-
 syn keyword csdlTarget twitter.user.profile_age
-
 syn keyword csdlTarget twitter.user.friends_count
-
 syn keyword csdlTarget twitter.user.screen_name
-
 syn match csdlTarget 'twitter\.user\.lang'
 syn keyword csdlTarget twitter.user.time_zone
-
 syn match csdlTarget 'twitter\.user\.name'
 syn match csdlTarget 'twitter\.user\.id'
 syn keyword csdlTarget twitter.user.listed_count
-
 syn match csdlTarget 'twitter\.user\.url'
 syn match csdlTarget 'twitter\.user\.verified'
 syn keyword csdlTarget twitter.place.place_type
-
 syn match csdlTarget 'twitter\.place\.country'
 syn keyword csdlTarget twitter.place.country_code
-
 syn keyword csdlTarget twitter.place.full_name
-
 syn match csdlTarget 'twitter\.place\.name'
 syn match csdlTarget 'twitter\.place\.url'
 syn match csdlTarget 'twitter\.place\.attributes\.locality'
 syn match csdlTarget 'twitter\.place\.attributes\.region'
 syn keyword csdlTarget twitter.place.attributes.street_address
-
 syn match csdlTarget 'twitter\.status'
 syn match csdlTarget 'twitter\.retweet\.text'
 syn match csdlTarget 'twitter\.retweet\.elapsed'
@@ -348,71 +299,48 @@ syn match csdlTarget 'twitter\.retweet\.source'
 syn match csdlTarget 'twitter\.retweet\.user\.description'
 syn match csdlTarget 'twitter\.retweet\.user\.location'
 syn keyword csdlTarget twitter.retweet.user.statuses_count
-
 syn keyword csdlTarget twitter.retweet.user.followers_count
-
 syn keyword csdlTarget twitter.retweet.user.follower_ratio
-
 syn keyword csdlTarget twitter.retweet.user.profile_age
-
 syn keyword csdlTarget twitter.retweet.user.friends_count
-
 syn keyword csdlTarget twitter.retweet.user.screen_name
-
 syn match csdlTarget 'twitter\.retweet\.user\.lang'
 syn keyword csdlTarget twitter.retweet.user.time_zone
-
 syn match csdlTarget 'twitter\.retweet\.user\.name'
 syn match csdlTarget 'twitter\.retweet\.user\.id'
 syn keyword csdlTarget twitter.retweet.user.listed_count
-
 syn match csdlTarget 'twitter\.retweet\.user\.url'
 syn match csdlTarget 'twitter\.retweet\.user\.verified'
 syn match csdlTarget 'twitter\.retweeted\.id'
 syn match csdlTarget 'twitter\.retweeted\.source'
 syn keyword csdlTarget twitter.retweeted.in_reply_to_screen_name
-
 syn keyword csdlTarget twitter.retweeted.in_reply_to_user_id_str
-
 syn keyword csdlTarget twitter.retweeted.in_reply_to_status_id
-
 syn match csdlTarget 'twitter\.retweet\.count'
 syn match csdlTarget 'twitter\.retweet\.mentions'
 syn keyword csdlTarget twitter.retweet.mention_ids
-
 syn match csdlTarget 'twitter\.retweet\.links'
 syn match csdlTarget 'twitter\.retweet\.domains'
 syn match csdlTarget 'twitter\.retweeted\.user\.description'
 syn match csdlTarget 'twitter\.retweeted\.user\.location'
 syn keyword csdlTarget twitter.retweeted.user.statuses_count
-
 syn keyword csdlTarget twitter.retweeted.user.followers_count
-
 syn keyword csdlTarget twitter.retweeted.user.follower_ratio
-
 syn keyword csdlTarget twitter.retweeted.user.profile_age
-
 syn keyword csdlTarget twitter.retweeted.user.friends_count
-
 syn keyword csdlTarget twitter.retweeted.user.screen_name
-
 syn match csdlTarget 'twitter\.retweeted\.user\.lang'
 syn keyword csdlTarget twitter.retweeted.user.time_zone
-
 syn match csdlTarget 'twitter\.retweeted\.user\.name'
 syn match csdlTarget 'twitter\.retweeted\.user\.id'
 syn keyword csdlTarget twitter.retweeted.user.listed_count
-
 syn match csdlTarget 'twitter\.retweeted\.user\.url'
 syn match csdlTarget 'twitter\.retweeted\.user\.verified'
 syn match csdlTarget 'twitter\.retweeted\.geo'
 syn keyword csdlTarget twitter.retweeted.place.place_type
-
 syn match csdlTarget 'twitter\.retweeted\.place\.country'
 syn keyword csdlTarget twitter.retweeted.place.country_code
-
 syn keyword csdlTarget twitter.retweeted.place.full_name
-
 syn match csdlTarget 'twitter\.retweeted\.place\.name'
 syn match csdlTarget 'twitter\.retweeted\.place\.url'
 syn match csdlTarget 'twitter\.retweeted\.place\.attributes'
@@ -462,24 +390,17 @@ syn match csdlTarget 'topix\.thread'
 syn match csdlTarget 'topix\.author\.location'
 syn match csdlTarget 'bitly\.user\.agent'
 syn keyword csdlTarget bitly.url_hash
-
 syn match csdlTarget 'bitly\.share\.hash'
 syn match csdlTarget 'bitly\.cname'
 syn keyword csdlTarget bitly.referring_url
-
 syn keyword csdlTarget bitly.referring_domain
-
 syn match csdlTarget 'bitly\.url'
 syn match csdlTarget 'bitly\.domain'
 syn keyword csdlTarget bitly.country_code
-
 syn keyword csdlTarget bitly.geo_region_code
-
 syn match csdlTarget 'bitly\.country'
 syn keyword csdlTarget bitly.geo_region
-
 syn keyword csdlTarget bitly.geo_city
-
 syn match csdlTarget 'bitly\.geo'
 syn match csdlTarget 'bitly\.timezone'
 syn match csdlTarget 'trends\.type'
