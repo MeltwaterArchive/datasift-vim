@@ -530,7 +530,7 @@ twitter.user.screen_name == "chris_alexander"
 interaction.content cs == "TEST"
 twitter.user.friends_count > 100
 twitter.user.followers_count < 1500
-twitter.retweet_count >= 100
+twitter.retweet.count >= 100
 language.tag in "en,de,es"
 and interaction.sample < 1
 blog.author.avatar exists
