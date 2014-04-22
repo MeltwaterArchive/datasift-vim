@@ -22,6 +22,10 @@ syn keyword csdlOperator contains_any
 syn match csdlOperator "cs contains_any"
 syn keyword csdlOperator any
 syn match csdlOperator "cs any"
+syn keyword csdlOperator contains_all
+syn match csdlOperator "cs contains_all"
+syn keyword csdlOperator all
+syn match csdlOperator "cs all"
 syn keyword csdlOperator contains_near
 syn match csdlOperator "cs contains_near"
 syn keyword csdlOperator exists
