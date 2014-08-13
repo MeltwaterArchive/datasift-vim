@@ -8,7 +8,7 @@ if exists("b:current_syntax")
 endif
 
 setlocal iskeyword=.,@,48-57,_,192-255
-syn case ignore 
+syn case ignore
 
 syn match csdlKeyword "tag "
 syn match csdlKeyword "stream "
@@ -22,6 +22,10 @@ syn keyword csdlOperator contains_any
 syn match csdlOperator "cs contains_any"
 syn keyword csdlOperator any
 syn match csdlOperator "cs any"
+syn keyword csdlOperator contains_all
+syn match csdlOperator "cs contains_all"
+syn keyword csdlOperator all
+syn match csdlOperator "cs all"
 syn keyword csdlOperator contains_near
 syn match csdlOperator "cs contains_near"
 syn keyword csdlOperator exists
@@ -59,6 +63,8 @@ syn match csdlTarget 'interaction\.content'
 syn match csdlTarget 'interaction\.source'
 syn match csdlTarget 'interaction\.geo'
 syn match csdlTarget 'interaction\.link'
+syn match csdlTarget 'interaction\.mentions'
+syn match csdlTarget 'interaction\.hashtags'
 syn match csdlTarget 'interaction\.author\.username'
 syn match csdlTarget 'interaction\.author\.name'
 syn match csdlTarget 'interaction\.author\.id'
@@ -523,14 +529,16 @@ syn match csdlTarget 'youtube\.thumbnail'
 syn match csdlTarget 'youtube\.category'
 syn match csdlTarget 'youtube\.tags'
 
-syn match csdlComment "^\/\/.*$"
-syn match csdlComment "^\/\*.*$"
-syn match csdlComment "^.*\*\/$"
+syn keyword csdlCommentTodo      TODO FIXME XXX TBD contained
+syn match   csdlLineComment      "\/\/.*" contains=@Spell,csdlCommentTodo
+syn region  csdlComment          start="/\*"  end="\*/" contains=@Spell,csdlCommentTodo
 
 highlight link csdlKeyword Statement
 highlight link csdlOperator Operator
 highlight link csdlLogicalOperator Operator
 highlight link csdlTarget Constant
+highlight link csdlCommentTodo Todo
+highlight link csdlLineComment Comment
 highlight link csdlComment Comment
-"
+
 let b:current_syntax = "csdl"
